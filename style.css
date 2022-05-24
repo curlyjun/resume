@@ -18,7 +18,8 @@ body {
 
 :root {
   --main-color: #FCB318;
-  --period-color: #757575;;
+  --period-color: #757575;
+  --desc-color: #616161;
 }
 
 main {
@@ -31,6 +32,10 @@ a {
   color: inherit;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
 
 h1 {
   font-size: 2.6rem;
@@ -41,6 +46,10 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h2::before {
@@ -61,4 +70,43 @@ td:first-child {
 .period {
   font-size: 1rem;
   color: var(--period-color);
+}
+
+.tech {
+  position: relative;
+  display: inline-block;
+  padding: 16px 6px 10px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.tech img {
+  border-radius: 5px;
+}
+
+.tech-title {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 5px;
+  top: -14px;
+  background-color: #fff;
+}
+
+
+.desc {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 26px;
+  color: var(--desc-color);
+}
+
+.desc::before {
+  content: "“";
+  font-size: 1.5rem;
+}
+
+.desc::after {
+  content: "”";
+  font-size: 1.5rem;
 }

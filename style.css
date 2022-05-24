@@ -1,0 +1,64 @@
+html,
+body {
+  font-size: 16px;
+  background-color: #fff;
+  color: #212121;
+  word-break: keep-all;
+
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  overflow-x: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #FCB318;
+  --period-color: #757575;;
+}
+
+main {
+  padding: 16px;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+
+h1 {
+  font-size: 2.6rem;
+  text-decoration: underline solid var(--main-color);
+  text-underline-position: under;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+h2::before {
+  content: '•';
+  color: var(--main-color);
+  margin-right: 3px;
+}
+
+td:first-child {
+  padding-right: 16px;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.period {
+  font-size: 1rem;
+  color: var(--period-color);
+}

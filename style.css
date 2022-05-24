@@ -5,19 +5,25 @@ body {
   color: #212121;
   word-break: keep-all;
 
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --main-color: #FCB318;
+  --main-color: #fcb318;
   --period-color: #757575;
   --desc-color: #616161;
 }
@@ -36,11 +42,15 @@ li {
   margin-bottom: 8px;
 }
 
-
 h1 {
   font-size: 2.6rem;
-  text-decoration: underline solid var(--main-color);
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
   text-underline-position: under;
+}
+
+h1.name {
+  font-size: 3rem;
 }
 
 h2 {
@@ -53,7 +63,7 @@ h3 {
 }
 
 h2::before {
-  content: '•';
+  content: "•";
   color: var(--main-color);
   margin-right: 3px;
 }
@@ -93,10 +103,10 @@ td:first-child {
   background-color: #fff;
 }
 
-
 .desc {
   font-size: 1.1rem;
   font-style: italic;
+  line-height: 22px;
   margin-bottom: 26px;
   color: var(--desc-color);
 }

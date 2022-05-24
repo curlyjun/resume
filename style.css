@@ -82,6 +82,12 @@ td:first-child {
   color: var(--period-color);
 }
 
+.job-project-wrapper {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid #fdd454;
+}
+
 .tech {
   position: relative;
   display: inline-block;

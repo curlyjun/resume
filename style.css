@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background-color: var(--main-color);
+}
+
 @media (max-width: 768px) {
   html,
   body {
@@ -73,7 +77,7 @@ td:first-child {
 }
 
 .intro {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 

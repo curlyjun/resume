@@ -42,6 +42,10 @@ a {
   color: inherit;
 }
 
+ul {
+  padding-inline-start: 20px;
+}
+
 li {
   margin-bottom: 8px;
 }
@@ -89,7 +93,7 @@ td:first-child {
 .job-project-wrapper {
   padding-left: 1rem;
   margin-left: 1rem;
-  border-left: 1px solid #fdd454;
+  border-left: 4px solid #fdd454aa;
 }
 
 .tech {
